@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração</title>
+    <style>
+        /* Adicione aqui o seu estilo para a página de administração */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Painel de Administração</h1>
+        
+        <!-- Formulário de Pesquisa de Usuário -->
+        <form action="pesquisa.php" method="POST">
+            <label for="email">Pesquisar Usuário por Email:</label>
+            <input type="email" name="email" required>
+            <button type="submit">Pesquisar</button>
+        </form>
+
+        <!-- Resultados da Pesquisa -->
+        <div class="resultados">
+            <!-- Exibir os resultados da pesquisa aqui -->
+        </div>
+
+        <!-- Formulário de Exclusão de Usuário -->
+        <form action="exclusao.php" method="POST">
+            <label for="id">ID do Usuário para Excluir:</label>
+            <input type="text" name="id" required>
+            <button type="submit">Excluir</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="vanilla-tilt.js"></script>
+    <script src=""></script>
+    <title>PÁGINA DE LOGIN</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login">
+            <form method="post" action="login.php" id="form-login" name="form-login">
+                <fieldset>
+                    <h2><legend>LOGIN</legend></h2>
+                    <p class="paragrafos"><label for="login">Login:</label>
+                        <input type="text" name="login" id="login" /></p>
+                    <p class="paragrafos"><label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" /></p>
+                    <center><input class="botao" type="submit" value="Login" id="entrar" name="entrar" /></center>
+                </fieldset>
+            </form>
+        </div>
+
+        <form method="post" action="cadastrar.php" id="form-cadastrar" name="form-cadastrar">
+            <fieldset>
+                <h2><legend>CASO NÃO TENHA LOGIN, CADASTRE-SE</legend></h2>
+                <p class="paragrafos"><label for="username">Nome:</label>
+                    <input type="text" name="username" id="username" /></p>
+                <p class="paragrafos"><label for="email">Email:</label>
+                    <input type="text" name="email" id="email" /></p>
+
+                <p class="paragrafos"><label for="login">Login:</label>
+                    <input type="text" name="login" id="login" /></p>
+                <p class="paragrafos"><label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" /></p>
+
+                    <div class="cad">
+                <center>
+                    <input class="botao" type="submit" value="Cadastre-se" />
+                    <input class="botao" type="reset" name="reset" title="reset" value="Limpar">
+                </center>
+            </div>
+            </fieldset>
+        </form>
+
+        <form name="form-excluir" action="excluir.php" method="POST">
+            <fieldset>
+                <p class="paragrafos"><legend>Para excluir um registro, digite o email:</legend></p>
+                <p class="paragrafos"><label for="email-excluir">Email:</label>
+                    <input type="text" name="email-excluir" id="email-excluir" /></p>
+                <center>
+                    <input class="botao" type="submit" name="pesquisar" title="pesquisar" value="Pesquisar">
+                </center>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Estilo de fundo com efeito de vidro */
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    max-width: 400px;
+    height: 40em;
+    border-radius: 20px;
+    gap: 10px;
+    background: linear-gradient(89.41deg, rgba(47, 35, 37, 0.03324) 15.4%, rgba(71, 63, 166, 0.17122) 66.65%);
+    border: 2px solid #ffffff10;
+    backdrop-filter: blur(10px);
+    color: #fff2e7;
+}
+
+h5 {
+    font-family: 'Righteous', cursive;
+    margin-bottom: 10px; /* Adicione um espaço de 10px entre h5 e os elementos abaixo */
+}
+
+.login {
+    border-top: 0.4px solid #5c0368;
+    padding-top: 48px;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.paragrafos {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Estilize as caixas de entrada (inputs) */
+input {
+    margin-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.1); /* Deixa a caixa de entrada transparente */
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+/* Estilize os botões */
+.botao {
+    font-size: 16px; /* Tamanho da fonte de 20px */
+    font-family: 'Comfortaa', cursive;
+    background: #59429d;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-left: auto; /* Alinha o botão à direita */
+    display: block; /* Define como um bloco para ocupar toda a largura disponível */
+}
+
+.botao:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+.cad {
+    display: flex;
+}
